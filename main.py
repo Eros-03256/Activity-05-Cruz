@@ -7,6 +7,7 @@ gray=cv.imread("hinagpis.jpg", 0)
 print("""
 ACTIVITY #5:
 The program should be:
+Choose Program:
     1. Accept/load colored img. Grayscale should be rejected.
     2. Output a pixel value.
     3. Modify a pixel value.
@@ -52,10 +53,10 @@ elif opt == 4:
     y=150
     print(img.shape)
     print(f"""
-                total pixel in x-axis: {img.shape[0]}
-                total pixel in y-axis: {img.shape[1]}
-                compared value in x-axis: {x}
-                compared value in y-axis: {y}
+                the total pixel in x-axis: {img.shape[0]}
+                the total pixel in y-axis: {img.shape[1]}
+                the compared value in x-axis: {x}
+                the compared value in y-axis: {y}
             """)
 
     if x <= img.shape[0] and y <= img.shape[1] :
@@ -70,8 +71,8 @@ elif opt == 5:
     totalPixel=img.shape[0] * img.shape[1]
 
     print(f"""
-              total fixed variable: {fixedValue}
-              total image pixels: {totalPixel}
+              the total fixed variable: {fixedValue}
+              the total image pixels: {totalPixel}
             """)
 
     if fixedValue > totalPixel :
@@ -82,7 +83,7 @@ elif opt == 5:
         print("equal")
 
 elif opt == 6:
-    print(f"image data type is: {img.dtype}")
+    print(f"the image data type is: {img.dtype}")
 
 else:
     exit()
